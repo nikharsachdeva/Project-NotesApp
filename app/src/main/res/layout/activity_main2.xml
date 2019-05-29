@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <EditText
+        android:id="@+id/editField"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="70dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="80dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="214dp"
+        android:layout_marginBottom="16dp"
+        android:text="save"
+        android:onClick="saveFun"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editField" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="80dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="cancelFun"
+        android:text="@android:string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/save"
+        app:layout_constraintTop_toBottomOf="@+id/editField" />
+</android.support.constraint.ConstraintLayout>
